@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pathology of the Urinary System</title>
+<style>
+/* ===== COLOURS: edit these to re-theme the whole site ===== */
+:root{--bg:#f4f8f8;--ink:#14292b;--mut:#4d6567;--br:#0f5c63;--ac:#b4492f;--tint:#e1eeee;--ln:#cbdede;--cd:#fff;--org:#a8d2d2;--orgh:#f1b8a6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1c1e;--ink:#e6f1f1;--mut:#9bb5b6;--br:#6fd0d0;--ac:#f2a089;--tint:#162a2c;--ln:#27474a;--cd:#132325;--org:#2f6b6e;--orgh:#c8705a}}
+:root[data-theme="dark"]{--bg:#0f1c1e;--ink:#e6f1f1;--mut:#9bb5b6;--br:#6fd0d0;--ac:#f2a089;--tint:#162a2c;--ln:#27474a;--cd:#132325;--org:#2f6b6e;--orgh:#c8705a}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2;margin:0}
+a{color:var(--br)}
+:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--ln);display:flex;align-items:center;gap:20px;padding:10px 20px}
+header b{font-family:Georgia,serif;color:var(--br);white-space:nowrap}
+nav{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+nav a{padding:6px 12px;border-radius:99px;text-decoration:none;color:var(--ink);white-space:nowrap;font-size:.95rem}
+nav a:hover{background:var(--tint)}
+main{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:56px 0 8px}
+h2{font-size:clamp(1.6rem,3.5vw,2.1rem);color:var(--br);margin-bottom:8px}
+.lead{color:var(--mut);max-width:62ch;margin:0 0 24px}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:32px;align-items:center;padding-top:40px}
+.hero h1{font-size:clamp(2rem,5vw,3.2rem);color:var(--br);margin-bottom:14px}
+.hero p{max-width:52ch;color:var(--mut);font-size:1.08rem}
+.hint{font-size:.92rem;border-left:3px solid var(--ac);padding-left:12px;color:var(--ink)!important}
+.map{background:var(--tint);border-radius:20px;padding:16px;text-align:center}
+.map svg{width:100%;max-width:300px;height:auto}
+.o{cursor:pointer;fill:var(--org);stroke:var(--br);stroke-width:2;transition:fill .2s}
+.o:hover,.o:focus-visible{fill:var(--orgh)}
+.map text{fill:var(--ink);font-size:11px;pointer-events:none}
+.ln{fill:none;stroke:var(--br);stroke-width:2}
+.map small{display:block;color:var(--mut);margin-top:4px}
+details{background:var(--cd);border:1px solid var(--ln);border-radius:10px;margin:0 0 10px}
+summary{cursor:pointer;padding:14px 16px;font-weight:600;display:flex;justify-content:space-between;gap:12px;align-items:baseline;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--ac);font-size:1.3rem;line-height:1;margin-left:auto}
+details[open]>summary::after{content:"\2212"}
+summary em{font-style:normal;font-weight:400;color:var(--mut);font-size:.88rem}
+.b{padding:0 16px 14px;max-width:78ch}
+.b h4{margin:16px 0 4px;color:var(--ac);font-size:1rem}
+.b ul{margin:0;padding-left:20px}.b li{margin:2px 0}
+.nt{color:var(--mut);font-size:.92rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.chips button,.q{font:inherit;border:1px solid var(--ln);background:var(--cd);color:var(--ink);border-radius:99px;padding:6px 14px;cursor:pointer}
+.chips button[aria-pressed="true"]{background:var(--br);color:var(--bg);border-color:var(--br)}
+.q{border-radius:8px;width:100%;max-width:340px;margin-bottom:6px;cursor:text}
+.cnt{color:var(--mut);font-size:.9rem;margin:0 0 12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.card{background:var(--cd);border:1px solid var(--ln);border-radius:10px;padding:16px}
+.card h3{font-size:1.15rem;color:var(--br);margin-bottom:4px}
+.card p{margin:6px 0 0}
+.ar{direction:rtl;color:var(--ac);font-size:1.05rem;margin:0 0 4px!important}
+.facts{background:var(--tint);border-radius:14px;padding:18px 22px;margin-top:24px}
+.facts ul{margin:6px 0 0;padding-left:20px}
+footer{max-width:1040px;margin:56px auto 24px;padding:20px;border-top:1px solid var(--ln);color:var(--mut);font-size:.9rem}
+.org{margin-bottom:24px}
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-bottom:8px}
+.figs img,.les>img{width:100%;height:auto;border-radius:10px;border:1px solid var(--ln);display:block;background:#fff}
+.les{display:grid;grid-template-columns:minmax(0,300px) 1fr;gap:16px;align-items:start;margin-bottom:18px}
+.les details{margin:0}
+.gh{margin:40px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--ln)}
+.gh h3{font-size:1.5rem;color:var(--br)}.gh p{margin:4px 0 0;color:var(--mut);max-width:64ch}
+[hidden]{display:none!important}
+@media (max-width:760px){.les{grid-template-columns:1fr}.hero{grid-template-columns:1fr}header{gap:10px;padding:8px 12px}header b{font-size:.95rem}}
+</style>
+</head>
+<body>
+<header><b>Urinary System Pathology</b>
+<nav aria-label="Sections"><a href="#home">Overview</a><a href="#anatomy">Anatomy</a><a href="#diseases">Diseases</a><a href="#signs">Clinical signs</a><a href="#diagnosis">Diagnosis</a><a href="#prevention">Prevention</a></nav></header>
+<main>
+<section id="home" class="hero">
+<div>
+<h1>The urinary system and the diseases that affect it</h1>
+<p>Anatomy, histology, diseases, diagnosis, clinical signs and prevention for the kidney, ureter, urinary bladder and urethra.</p>
+<p class="hint">Select an organ in the diagram to see the conditions that affect it, or use the menu to explore each topic.</p>
+</div>
+<div class="map">
+<svg viewBox="0 0 220 300" role="group" aria-label="Urinary tract diagram. Select an organ to filter diseases.">
+<path class="ln" d="M78 92 C84 140 96 170 104 206"/><path class="ln" d="M142 92 C136 140 124 170 116 206"/>
+<ellipse class="o" data-o="kidney" tabindex="0" role="button" aria-label="Kidney diseases" cx="62" cy="68" rx="26" ry="40" transform="rotate(12 62 68)"/>
+<ellipse class="o" data-o="kidney" tabindex="0" role="button" aria-label="Kidney diseases" cx="158" cy="68" rx="26" ry="40" transform="rotate(-12 158 68)"/>
+<ellipse class="o" data-o="bladder" tabindex="0" role="button" aria-label="Urinary bladder diseases" cx="110" cy="232" rx="36" ry="28"/>
+<path class="o" data-o="ureter" tabindex="0" role="button" aria-label="Ureter diseases" d="M104 120 h12 v54 h-12z"/>
+<rect class="o" data-o="urethra" tabindex="0" role="button" aria-label="Urethra diseases" x="104" y="258" width="12" height="36" rx="5"/>
+<text x="6" y="130">Kidneys</text><text x="150" y="152">Ureters</text><text x="150" y="238">Bladder</text><text x="126" y="284">Urethra</text>
+</svg>
+<small>Select an organ</small>
+</div>
+</section>
+
+<section id="anatomy">
+<h2>Anatomy and function</h2>
+<p class="lead">Normal structure comes first: knowing it makes the lesions easier to read.</p>
+<div id="anat"></div>
+</section>
+
+<section id="diseases">
+<h2>Diseases and pathological conditions</h2>
+<p class="lead">Conditions are grouped into inflammatory lesions, degenerative lesions, and stones, obstruction and tumors. Use the organ buttons or search to narrow the list.</p>
+<div class="chips" id="chips" role="group" aria-label="Filter by organ"></div>
+<input class="q" id="q" type="search" placeholder="Search a condition or sign" aria-label="Search conditions">
+<p class="cnt" id="cnt" aria-live="polite"></p>
+<div id="dz"></div>
+</section>
+
+<section id="signs">
+<h2>Clinical signs</h2>
+<p class="lead">Urinary disorders show different signs depending on the organ and severity. Recognizing them early helps diagnosis and treatment.</p>
+<div class="grid" id="sg"></div>
+</section>
+
+<section id="diagnosis">
+<h2>Diagnosis</h2>
+<p class="lead">Accurate diagnosis identifies the underlying cause, evaluates kidney function and guides treatment.</p>
+<div class="grid" id="dg"></div>
+</section>
+
+<section id="prevention">
+<h2>Prevention</h2>
+<p class="lead">Maintaining urinary system health helps prevent disease and improves the overall well-being of animals.</p>
+<div class="grid" id="pv"></div>
+<div class="facts"><h3>Did you know?</h3><ul id="fx"></ul></div>
+</section>
+</main>
+<footer>Content is based on the supplied course notes, “Pathology: Kidney, Ureter, Urinary Bladder, Urethra”. To edit the text, change the lists in the script at the bottom of this file.</footer>
+
+<script>
+/* ===== CONTENT: edit the text below. Items in a list are separated by | ===== */
+var OL={kidney:"Kidney",ureter:"Ureter",bladder:"Urinary bladder",urethra:"Urethra",tract:"General"};
+
+var ANAT=[
+{k:"Kidney",i:"Two bean-shaped organs at the back of the abdominal cavity, on either side of the vertebral column, below the rib cage.",
+ b:[["Main structures","Renal capsule: a thin fibrous layer that surrounds and protects the kidney|Renal cortex: the outer region|Renal medulla: the inner region, containing renal pyramids|Renal pelvis: a funnel-shaped structure that collects urine and passes it into the ureter|Ureter: carries urine from the kidney to the urinary bladder|Nephron: the structural and functional unit of the kidney"],
+ ["Functions","Blood filtration: removes waste products and harmful substances|Urine formation: eliminates waste products|Water balance: regulates the amount of water in the body|Electrolyte balance: maintains normal levels of minerals such as sodium and potassium|Blood pressure regulation|Acid-base balance: maintains the normal pH of the blood|Hormone production: erythropoietin stimulates red blood cell production|Vitamin D activation: supports healthy bones and calcium absorption"],
+ ["Normal histology","Renal corpuscle: glomerulus (a network of blood capillaries that filters the blood) and Bowman’s capsule|Proximal convoluted tubule (PCT): simple cuboidal epithelium with a prominent brush border; reabsorbs most of the filtered water and nutrients|Distal convoluted tubule (DCT): simple cuboidal epithelium with no prominent brush border; helps regulate electrolytes|Collecting ducts: collect urine from the nephrons and help regulate urine concentration|Loop of Henle: a U-shaped structure that helps concentrate urine and maintain water and salt balance"]]},
+{k:"Ureter",i:"Two narrow, muscular tubes that connect the renal pelvis of each kidney to the urinary bladder.",
+ b:[["Structure","Length: approximately 25–30 cm in adults|Location: retroperitoneal organs|Mucosa: lined by transitional epithelium (urothelium), which allows stretching|Muscularis: smooth muscle layers responsible for peristaltic contractions|Adventitia: outer connective tissue layer containing blood vessels and nerves"],
+ ["Normal constrictions","Ureteropelvic junction (UPJ)|Crossing of the pelvic brim over the iliac vessels|Ureterovesical junction (UVJ)"],
+ ["Function","Transports urine from the kidneys to the urinary bladder|Urine flows from the renal pelvis into the ureter, and peristalsis pushes it toward the bladder|The ureterovesical junction helps prevent backward flow of urine (vesicoureteral reflux)|Transport depends on coordinated peristaltic movements, not gravity alone"]]},
+{k:"Urinary bladder",i:"A hollow, muscular organ that temporarily stores urine before it leaves the body through the urethra.",
+ b:[["Main features","Apex: the cranial end|Body: the main central portion|Neck: the caudal narrow part that continues into the urethra|Ureters: carry urine from the kidneys into the bladder|Urethra: the tube through which urine leaves the bladder"],
+ ["Functions","Urine storage: the primary function|Bladder expansion: volume increases as urine accumulates|Urine elimination: the detrusor muscle contracts to push urine into the urethra during urination (micturition)|Urine containment: continence is kept through coordinated activity of the bladder and urethral sphincters"],
+ ["Histology: transitional epithelium (urothelium)","Basal cells: small cells attached to the basement membrane|Intermediate cells: several layers of polygonal cells|Superficial cells: large dome-shaped umbrella cells|The epithelium changes shape with the degree of bladder distension|It forms a protective barrier against urine, prevents leakage of water and harmful substances into underlying tissues, and lets the bladder expand and contract"]]},
+{k:"Urethra",i:"A muscular tube that extends from the urinary bladder to the external urethral orifice. It carries urine, and in males also semen.",
+ b:[["Parts (male)","Prostatic urethra: the widest part; passes through the prostate gland|Membranous urethra: the shortest and least distensible part; passes through the external urethral sphincter|Bulbous urethra: the proximal expanded part of the spongy urethra, within the bulb of the penis|Penile urethra: the longest part, running to the external urethral opening"],
+ ["Functions","Urine transport in both sexes, through the urethral meatus|Semen and sperm transport in males|Valve action with two sphincters: the internal urethral sphincter (involuntary smooth muscle at the bladder neck) and the external urethral sphincter (voluntary skeletal muscle of the pelvic floor, allowing conscious control of urination)"]]}
+];
+
+var D=[
+{n:"Nephritis",o:"kidney",d:"Inflammation of the kidney tissue, which may affect the kidney’s ability to filter blood properly.",c:"Infections|Autoimmune diseases|Certain medications",s:"Blood or protein in the urine|Swelling of the body|High blood pressure|Pain in the kidney area"},
+{n:"Glomerulonephritis",o:"kidney",d:"Inflammation of the glomeruli, the tiny blood-filtering units inside the kidneys.",c:"Immune system disorders|Previous bacterial infections, such as Streptococcus infection|Autoimmune diseases",s:"Blood in the urine (hematuria)|Protein in the urine (proteinuria)|Swelling of the face and legs|High blood pressure"},
+{n:"Pyelonephritis",o:"kidney",d:"Bacterial infection and inflammation of the renal pelvis and kidney tissue.",c:"Bacterial infections, especially E. coli|Urinary tract infections|Urinary tract obstruction",s:"High fever|Back or flank pain|Painful urination|Frequent urination|Nausea and vomiting"},
+{n:"Nephrosis",o:"kidney",d:"Degenerative changes in kidney cells, especially the renal tubules, which may affect kidney function.",c:"Certain toxins and medications|Reduced blood and oxygen supply to the kidneys|Metabolic disorders",s:"Swelling of the body|Protein in the urine in some conditions|Impaired kidney function|Increased waste products in the blood"},
+{n:"Hydronephrosis",o:"kidney",d:"Abnormal dilation of the renal pelvis and calyces due to obstruction of urine flow, causing urine to accumulate inside the kidney.",c:"Kidney stones|Ureter obstruction|Enlarged prostate|Congenital abnormalities",s:"Flank or back pain|Difficulty urinating in some cases|Nausea and vomiting|Kidney tissue damage if the condition persists"},
+{n:"Renal calculi (kidney stones)",o:"kidney",d:"Hard deposits of minerals and salts that form inside the kidneys due to high concentrations of certain substances in the urine.",c:"Dehydration and insufficient water intake|High concentrations of minerals and salts in urine|Genetic and dietary factors|Metabolic disorders",s:"Severe flank and back pain|Blood in the urine|Painful urination|Nausea and vomiting"},
+{n:"Ureteritis",o:"ureter",d:"Acute or chronic inflammation of the ureter, the tube that carries urine from the kidney to the urinary bladder.",c:"Bacterial urinary tract infections (UTIs)|Ascending infections spreading from the bladder|Irritation caused by urinary stones|Injury or irritation following medical procedures",ch:"Inflammation of the ureteral wall|Swelling (edema) of the mucosa|Inflammatory cell infiltration|Possible thickening of the ureteral wall",s:"Pain in the flank or lower abdomen|Painful urination (dysuria)|Frequent urination|Blood in urine (hematuria) in some cases|Fever if an associated infection is present",dx:"Urinalysis|Urine culture|Ultrasound or CT scan when indicated",cp:"Severe or persistent inflammation may lead to ureteral scarring and stricture formation, potentially causing urinary obstruction."},
+{n:"Ureterolithiasis",o:"ureter",d:"Presence of urinary calculi (stones) within the ureter. These stones usually originate in the kidneys and move down into the ureter.",ty:"Calcium oxalate: the most common type|Calcium phosphate|Uric acid|Struvite|Cystine",c:"Dehydration and concentrated urine|High levels of calcium, oxalate, or uric acid in urine|Metabolic disorders|Genetic predisposition|Dietary factors",ch:"Stone formation and accumulation inside the ureter|Partial or complete obstruction of urine flow|Damage and irritation of the ureteral mucosa|Increased pressure above the obstruction|Possible development of hydroureter and hydronephrosis",s:"Severe, sudden flank pain (renal colic)|Pain radiating toward the groin|Nausea and vomiting|Hematuria (blood in urine)|Painful or frequent urination",dx:"Urinalysis|Ultrasound|Non-contrast CT scan"},
+{n:"Hydroureter",o:"ureter",d:"Abnormal dilation (enlargement) of the ureter due to impaired urine drainage, commonly caused by an obstruction somewhere along the urinary tract.",c:"Ureteral stones|Ureteral strictures (narrowing)|Congenital abnormalities|Tumors compressing or obstructing the ureter|Vesicoureteral reflux in some cases|Urinary tract obstruction",ch:"Abnormal enlargement of the ureter|Accumulation of urine above the obstruction|Stretching and thinning of the ureteral wall in prolonged cases|Reduced efficiency of urine transport|May be associated with hydronephrosis (dilation of the renal collecting system)"},
+{n:"Cystitis",o:"bladder",d:"Inflammation of the urinary bladder, commonly caused by bacterial infection.",c:"Bacterial infections, especially ascending infections|Urinary tract obstruction|Bladder stones|Chemical irritation|Trauma or other inflammatory conditions",ch:"Congestion and redness of the bladder mucosa|Edema of the bladder wall|Infiltration of inflammatory cells|Increased mucus production|In severe cases, ulceration and hemorrhage",s:"Frequent urination (pollakiuria)|Painful urination (dysuria)|Blood in urine (hematuria)|Straining during urination|Cloudy or abnormal-smelling urine"},
+{n:"Hemorrhagic cystitis",o:"bladder",d:"A severe form of bladder inflammation with bleeding into the bladder mucosa and sometimes into deeper layers of the bladder wall.",c:"Severe bacterial infections|Bladder stones causing mucosal injury|Urinary tract obstruction|Chemical or drug-induced irritation|Severe trauma",ch:"Marked congestion of blood vessels|Petechial and extensive hemorrhages|Edema of the bladder wall|Damage or ulceration of the urothelium|In severe cases, extensive hemorrhage throughout the bladder wall",s:"Gross hematuria (visible blood in urine)|Painful urination|Frequent urination|Straining during urination|Abdominal discomfort"},
+{n:"Urolithiasis (bladder stones)",o:"bladder",d:"Formation or presence of mineral concretions (urinary stones or calculi) within the urinary tract, including the urinary bladder.",ty:"Struvite (magnesium ammonium phosphate)|Calcium oxalate|Urate|Cystine",c:"Changes in urine pH|High concentrations of minerals in urine|Inadequate water intake|Urinary tract infections|Dietary and metabolic factors",ch:"Formation of mineral deposits inside the bladder|Irritation and damage to the bladder mucosa|Chronic inflammation|Possible urinary obstruction",s:"Dysuria (painful urination)|Hematuria (blood in urine)|Pollakiuria (frequent urination)|Stranguria (straining to urinate)|Complete urinary obstruction in severe cases"},
+{n:"Bladder tumors (neoplasia)",o:"bladder",d:"Abnormal growths resulting from uncontrolled proliferation of cells within the urinary bladder. They may be benign or malignant.",ty:"Urothelial carcinoma (transitional cell carcinoma, TCC): the most common malignant bladder tumor; arises from the urothelial lining and may invade the bladder wall and surrounding tissues|Squamous cell carcinoma: malignant, arising from squamous epithelial cells; may be associated with chronic irritation and inflammation|Leiomyoma: a benign tumor of smooth muscle cells|Leiomyosarcoma: a malignant tumor of smooth muscle cells",ch:"Formation of abnormal masses within the bladder wall|Thickening of the bladder wall|Ulceration and bleeding|Invasive growth in malignant tumors|Possible obstruction of urine flow",s:"Hematuria|Dysuria|Pollakiuria|Stranguria"},
+{n:"Urethritis",o:"urethra",d:"Inflammation of the urethra, the fibromuscular tube that carries urine from the bladder to the outside of the body. In males it also carries semen.",ty:"Gonococcal: caused by Neisseria gonorrhoeae (gonorrhea)|Nongonococcal (NGU): caused by pathogens other than gonorrhea, most commonly Chlamydia trachomatis, Mycoplasma genitalium, or Trichomonas vaginalis|Noninfectious: caused by mechanical trauma (such as a urinary catheter) or chemical irritants (such as soaps or spermicides)",s:"Pain, burning, or difficulty when urinating (dysuria)|Itching or irritation around the urethral opening|White, cloudy, or purulent discharge from the penis or vagina",dx:"Patient history and physical examination|First-void urine tests|Nucleic acid amplification tests (NAATs) via swabs",tx:"Targeted or empirical antibiotics (such as ceftriaxone, doxycycline, or azithromycin)|Sexual partners must also be evaluated and treated to prevent reinfection",cp:"Untreated infectious urethritis can spread and lead to pelvic inflammatory disease (PID), epididymitis, prostatitis, or reactive arthritis.",nt:"Symptoms often appear a few days or weeks after exposure, though many people (especially women) have none."},
+{n:"Urethral calculi",o:"urethra",d:"Rare solid mineral deposits that form or become lodged in the urethra, accounting for less than 1% of all urinary tract stones.",ty:"Secondary calculi (most common): originate in the kidneys or bladder and migrate into the urethra; typically larger|Primary calculi (less common): form directly inside the urethra, often due to urinary stasis, strictures, diverticula, or foreign bodies; usually smaller and multiple|Composition: mostly calcium oxalate; primary stones can also be struvite (magnesium ammonium phosphate) or uric acid",s:"Difficulty urinating, weak urine stream, or acute urinary retention (complete blockage)|Sharp or aching pain in the penis, perineum, or lower abdomen|Burning during urination (dysuria), frequent urge to urinate, or blood in the urine (hematuria)",dx:"Clinical examination of the lower urinary tract and perineum|X-rays or ultrasound: a radiopaque mass, or an echogenic focus with posterior acoustic shadowing|Retrograde urethrography or cystourethroscopy to look for underlying strictures",tx:"Spontaneous passing: small stones in the anterior urethra may pass on their own|Manual removal with specialized forceps in an emergency setting|Endoscopic or surgical removal: the most common approach"},
+{n:"Urinary obstruction",o:"tract",d:"A blockage that prevents normal urine flow and causes urine to back up into the bladder.",c:"In men: benign prostatic hyperplasia (BPH, enlarged prostate), prostate cancer, urethral strictures (scar tissue), and bladder or urethral stones|In women: urethral strictures, pelvic organ prolapse, previous pelvic or urethral surgery or radiation, and rarely tumors|In children: congenital structural defects, such as posterior urethral valves in boys|In animals (especially male cats): urethral plugs, crystals, or uroliths (stones) causing a life-threatening blockage",s:"Difficulty or inability to urinate (complete or partial)|Weak or slow urine stream|Frequent or urgent need to urinate, especially at night|Pain or burning during urination (dysuria)|Lower abdominal or pelvic pressure, pain, and a distended bladder|Blood in the urine (hematuria)",dx:"Bladder catheterization: check residual urine and relieve the immediate backup|Imaging: ultrasound or X-rays of the bladder, prostate, and kidneys|Endoscopy / cystoscopy|Blood and urine tests: kidney function (creatinine and blood urea nitrogen) and ruling out infection",tx:"Immediate decompression: a urinary catheter or suprapubic tube to drain the bladder|Medications: alpha-blockers or prostate-shrinking medications for BPH, or pain and antispasmodic treatments"}
+];
+
+var SG=[["Polyuria","زيادة كمية البول","Production of an abnormally large volume of urine."],["Oliguria","قلة كمية البول","A decrease in urine production compared with the normal expected amount."],["Anuria","انعدام خروج البول","Complete or nearly complete absence of urine production. A serious condition requiring urgent veterinary attention."],["Pollakiuria","زيادة عدد مرات التبول","Frequent urination, usually involving small amounts of urine each time."],["Dysuria","صعوبة أو ألم أثناء التبول","Pain or discomfort during urination, often associated with urinary tract inflammation or obstruction."],["Stranguria","الحزق أثناء التبول","Straining and making considerable effort to pass urine, often with pain and discomfort."],["Urinary incontinence","سلس البول","Involuntary leakage of urine due to loss of normal control over urination."]];
+
+var DG=[["Urinalysis","تحليل البول","Evaluates the physical, chemical, and microscopic properties of urine. Helps detect blood, protein, glucose, crystals, and inflammatory cells."],["Blood tests","","Assess kidney function by measuring BUN (blood urea nitrogen, the nitrogen in the blood from urea) and creatinine (a waste product normally removed by the kidneys). Increased levels may indicate impaired kidney function, although other factors can also affect these values."],["Ultrasonography","السونار","A non-invasive imaging technique for the kidneys and urinary bladder. Helps detect kidney abnormalities, bladder stones, masses, cysts, and changes in organ structure."],["Radiography (X-ray)","الأشعة السينية","Visualizes the urinary tract and detects certain types of urinary stones, abnormal organ sizes, and other structural abnormalities."],["Histopathology","الفحص النسيجي المرضي","Examines tissue samples under a microscope to identify cellular and tissue changes. Particularly useful for kidney diseases, inflammation, degeneration, and tumors."],["Urine culture","مزرعة البول","Detects bacterial infections of the urinary tract, identifies the bacteria responsible, and uses antimicrobial susceptibility testing to find the most effective antibiotics."]];
+
+var PV=[["Providing clean water","Ensure continuous access to fresh, clean drinking water to maintain proper hydration."],["Balanced nutrition","Provide a suitable, balanced diet according to the animal’s species, age, and health condition."],["Regular veterinary check-ups","Perform routine examinations to detect urinary problems at an early stage."],["Monitoring urine","Observe changes in urine color, amount, smell, and frequency of urination."],["Early diagnosis and treatment","Detect and treat urinary tract infections early to prevent complications."],["Maintaining hygiene","Keep the animal’s living environment clean to reduce the risk of infections."]];
+
+var FX="The kidneys filter the blood continuously, helping remove waste products and maintain fluid balance.|Urine color and composition can provide valuable information about an animal’s health.|Urinary stones can develop in different parts of the urinary tract, including the kidneys and urinary bladder.|Early detection of kidney and urinary diseases can help prevent serious complications and improve treatment outcomes.";
+
+/* ===== CODE: no need to edit below this line ===== */
+var $=function(s){return document.querySelector(s)};
+function li(a){return"<ul>"+a.split("|").map(function(x){return"<li>"+x.replace(/^([^:]{2,60}):/,"<strong>$1:</strong>")+"</li>"}).join("")+"</ul>"}
+function sec(t,a){return a?"<h4>"+t+"</h4>"+li(a):""}
+
+var AIM={Kidney:['images/kidney-1.jpg','images/kidney-2.jpg','images/kidney-histology-1.jpg','images/kidney-histology-2.jpg'],Ureter:['images/ureter-1.jpg','images/ureter-2.jpg','images/ureter-3.jpg'],'Urinary bladder':['images/bladder-1.jpg','images/bladder-2.jpg','images/bladder-3.jpg'],Urethra:['images/urethra-1.jpg','images/urethra-2.jpg']};
+$("#anat").innerHTML=ANAT.map(function(o,n){return'<div class="org"><div class="figs">'+AIM[o.k].map(function(m){return'<img src="'+m+'" alt="'+o.k+'" loading="lazy">'}).join('')+'</div><details'+(n?'':' open')+'><summary>'+o.k+'</summary><div class="b"><p>'+o.i+'</p>'+o.b.map(function(x){return sec(x[0],x[1])}).join('')+'</div></details></div>'}).join('');
+
+/* group (inf / deg / oth) and photo of each condition */
+var G=[['inf','Inflammatory lesions','Inflammation of the kidney, ureter, urinary bladder and urethra.'],['deg','Degenerative lesions','Degenerative changes of kidney cells and dilation of the urinary tract.'],['oth','Stones, obstruction and tumors','Conditions that block urine flow or grow within the urinary tract.']];
+var M={'Nephritis':['inf','images/nephritis.jpg'],'Glomerulonephritis':['inf','images/glomerulonephritis.jpg'],'Pyelonephritis':['inf','images/pyelonephritis.jpg'],'Ureteritis':['inf','images/ureteritis.jpg'],'Cystitis':['inf','images/cystitis.jpg'],'Hemorrhagic cystitis':['inf','images/hemorrhagic-cystitis.jpg'],'Urethritis':['inf','images/urethritis.jpg'],
+'Nephrosis':['deg','images/nephrosis.jpg'],'Hydronephrosis':['deg','images/hydronephrosis.jpg'],'Hydroureter':['deg','images/hydroureter.jpg'],
+'Renal calculi (kidney stones)':['oth','images/renal-calculi.jpg'],'Ureterolithiasis':['oth','images/ureterolithiasis.jpg'],'Urolithiasis (bladder stones)':['oth','images/urolithiasis.jpg'],'Bladder tumors (neoplasia)':['oth','images/bladder-tumors.jpg'],'Urethral calculi':['oth','images/urethral-calculi.jpg'],'Urinary obstruction':['oth','images/urinary-obstruction.jpg']};
+function body(d){return'<p>'+d.d+'</p>'+sec('Types',d.ty)+sec('Causes',d.c)+sec('Pathological changes',d.ch)+sec('Signs and symptoms',d.s)+sec('Diagnosis',d.dx)+sec('Treatment',d.tx)+(d.cp?'<h4>Complications</h4><p>'+d.cp+'</p>':'')+(d.nt?'<p class="nt">'+d.nt+'</p>':'')}
+$("#dz").innerHTML=G.map(function(g){return'<div class="grp"><div class="gh"><h3>'+g[1]+'</h3><p>'+g[2]+'</p></div>'+D.filter(function(d){return M[d.n][0]===g[0]}).map(function(d){return'<article class="les" data-o="'+d.o+'"><img src="'+M[d.n][1]+'" alt="'+d.n+'" loading="lazy"><details><summary><span>'+d.n+'</span><em>'+OL[d.o]+'</em></summary><div class="b">'+body(d)+'</div></details></article>'}).join('')+'</div>'}).join('')+'<p class="cnt" id="none" hidden>No conditions match. Clear the search or choose All.</p>';
+
+$("#sg").innerHTML=SG.map(function(x){return"<div class=\"card\"><h3>"+x[0]+"</h3><p class=\"ar\" lang=\"ar\">"+x[1]+"</p><p>"+x[2]+"</p></div>"}).join("");
+$("#dg").innerHTML=DG.map(function(x){return"<div class=\"card\"><h3>"+x[0]+"</h3>"+(x[1]?"<p class=\"ar\" lang=\"ar\">"+x[1]+"</p>":"")+"<p>"+x[2]+"</p></div>"}).join("");
+$("#pv").innerHTML=PV.map(function(x){return"<div class=\"card\"><h3>"+x[0]+"</h3><p>"+x[1]+"</p></div>"}).join("");
+$("#fx").innerHTML=FX.split("|").map(function(x){return"<li>"+x+"</li>"}).join("");
+
+var F="all";
+$("#chips").innerHTML=[["all","All"]].concat(Object.keys(OL).map(function(k){return[k,OL[k]]})).map(function(x){return"<button data-f=\""+x[0]+"\" aria-pressed=\""+(x[0]==="all")+"\">"+x[1]+"</button>"}).join("");
+
+function apply(){
+  var q=$("#q").value.trim().toLowerCase(),shown=0,all=document.querySelectorAll("#dz .les");
+  all.forEach(function(el){
+    var ok=(F==="all"||el.dataset.o===F)&&(!q||el.textContent.toLowerCase().indexOf(q)>-1);
+    el.hidden=!ok;if(ok)shown++;
+  });
+  document.querySelectorAll("#dz .grp").forEach(function(g){g.hidden=!g.querySelector(".les:not([hidden])")});
+  document.querySelectorAll("#chips button").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.f===F)});
+  $("#cnt").textContent="Showing "+shown+" of "+all.length+" conditions";
+  $("#none").hidden=shown>0;
+}
+function pick(o){F=o;apply();$("#diseases").scrollIntoView()}
+$("#chips").addEventListener("click",function(e){var b=e.target.closest("button");if(b){F=b.dataset.f;apply()}});
+$("#q").addEventListener("input",apply);
+document.querySelectorAll(".o").forEach(function(el){
+  el.addEventListener("click",function(){pick(el.dataset.o)});
+  el.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();pick(el.dataset.o)}});
+});
+apply();
+</script>
+</body>
+</html>
